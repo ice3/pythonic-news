@@ -29,7 +29,7 @@ DEBUG = False
 
 
 USE_X_FORWARDED_HOST = True
-ALLOWED_HOSTS = ["news.python.sc", "192.168.50.11", "localhost"]
+ALLOWED_HOSTS = ["news.python.sc", "192.168.50.11", "192.168.50.12", "localhost"]
 
 
 # Application definition
