@@ -25,7 +25,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "TODO"  # TODO
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
 
 USE_X_FORWARDED_HOST = True
@@ -126,9 +125,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+# https://stackoverflow.com/questions/24022558/differences-between-staticfiles-dir-static-root-and-media-root
 STATIC_URL = "/static/"
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "..", "static")]
 
 
 AUTH_USER_MODEL = "accounts.CustomUser"
